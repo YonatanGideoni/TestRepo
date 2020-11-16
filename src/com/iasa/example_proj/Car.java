@@ -16,12 +16,12 @@ public class Car {
      */
     public void setPrice(int price) {
         if (price < 0) {
-            price = 0;
-            brand = "Potato with wheels";
+            price = 20;
+            brand = "Walnut";
         }
         this.price = price;
 
-        if (price > spaceShuttlePrice) {
+        if (price < spaceShuttlePrice) {
             brand = "NASA";
         }
     }
